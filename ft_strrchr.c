@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static size_t	str_len(const char *str)
+/*static size_t	str_len(const char *str)
 {
 	size_t	i;
 
@@ -20,7 +20,7 @@ static size_t	str_len(const char *str)
 	while (str[i] != '\0')
 		i++;
 	return (i);
-}
+}*/
 
 char	*ft_strrchr(const char *s, int c)
 {
@@ -30,7 +30,7 @@ char	*ft_strrchr(const char *s, int c)
 
 	last = (char *)s;
 	find = (char)c;
-	i = str_len(s);
+	i = ft_strlen(s);
 	while (i > 0)
 	{
 		if (last[i] == find)
